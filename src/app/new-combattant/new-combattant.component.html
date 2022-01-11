@@ -1,0 +1,119 @@
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Nom</label><br>
+      <input type="text" class="form-control" [(ngModel)]="combattant.Lname" >
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Prénom</label><br>
+      <input type="text" class="form-control" [(ngModel)]="combattant.Fname" >
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Pays</label><br>
+      <!-- <select name="" id="selectPys">
+
+      </select> -->
+      <input type="text" class="form-control" [(ngModel)]="combattant.country" >
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Taille</label><br>
+      <input type="text" class="form-control" [(ngModel)]="combattant.height" >
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Poids</label><br>
+      <input type="text" class="form-control" [(ngModel)]="combattant.weight">
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Porté</label><br>
+      <input type="text" class="form-control" [(ngModel)]="combattant.reach" >
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Age</label> <br>
+      <input type="text" class="form-control" [(ngModel)]="combattant.age">
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label>Nombre de Ko</label><br>
+      <input type="text" class="form-control" [(ngModel)]="combattant.nbKo" >
+    </div>
+  </div>
+</div>
+
+  <div class="row"> 
+    <div class="col-sm">
+        <div class="form-group">
+          <label>Nombre de victoire</label> <br>
+          <input type="text" class="form-control" [(ngModel)]="combattant.nbVictory" >
+         </div>
+       </div>
+      <div class="col-sm">
+        <div class="form-group">
+          <label>Sport de prédilection</label> <br>
+          <input type="text" class="form-control" [(ngModel)]="combattant.predilection" >
+        </div>        
+        </div>
+       
+      </div>
+
+  <div class="row">
+  <div class="col-sm">
+    <div class="form-group">
+      <label>Affiche</label> <br>
+      <input type="text" class="form-control" [(ngModel)]="combattant.combattantPics" >
+    </div>
+  </div>
+  
+  </div>
+
+<div class="col-sm">
+    <div class="form-group row">
+      <label class="col-12 col-form-label">
+        Déjà vaincu ?
+      </label>
+      <div class="col-12 row">
+        <div class="col-6">
+          <div class="form-check">
+            <input type="radio" name="defeat" class="form-check-input" [value]="true" [(ngModel)]="combattant.defeat"> <label class="form-check-label">Vaincu</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-check">
+            <input type="radio" name="defeat" class="form-check-input" [value]="false" [(ngModel)]="combattant.defeat"> <label class="form-check-label">Invaicu</label>
+          </div>  
+</div>
+
+<div>
+    <div class="form-group">
+      <label>Description</label><br>
+      <textarea name="synopsis" cols="30" rows="5" class="form-control mb-2" [(ngModel)]="combattant.description" [value]="combattant.description"></textarea>
+    </div>
+</div>
+  <div class="row">
+    <div class="col-12">
+      <div class="submit">
+        <button class="btn btn-success" (click)="add()">Envoyer</button>
+      </div>
+    </div>
+  </div>

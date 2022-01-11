@@ -1,0 +1,18 @@
+<div *ngIf="combattants">
+            <app-combattant *ngFor="let combattant of combattants; let i = index" 
+            [id]="combattant.id"
+            [Fname]="combattant.Fname"
+            [Lname]="combattant.Lname"
+            [country]="combattant.country"
+            [height]="combattant.height"
+            [weight]="combattant.weight"
+            [reach]="combattant.reach"
+            [age]="combattant.age"
+            [nbKo]="combattant.nbKo"
+            [nbVictory]="combattant.nbVictory"
+            [combattantPics]="combattant.combattantPics"
+            [defeat]="combattant.defeat"
+            [predilection]="combattant.predilection"
+            [description]="combattant.description">
+      </app-combattant>
+</div>
